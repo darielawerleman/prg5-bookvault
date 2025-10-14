@@ -26,9 +26,23 @@ Route::get('/contact', function() {
     ]);
 });
 
-Route::get('books/{name}', function(string $name) {
-    // code
+
+Route::get('books/{id}', function($id) {
+     return view('books', [
+    'id' => $id
+     ]);
+})-> name('books');
+
+
+Route::get('/home', function () {
+    return view('home');
 });
+
+Route::get('/user/{name?}', function (?string $name = null) {
+    return $name;
+});
+
+
 
 
 
