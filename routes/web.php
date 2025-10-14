@@ -26,21 +26,25 @@ Route::get('/contact', function() {
     ]);
 });
 
-
+//Named route
 Route::get('books/{id}', function($id) {
      return view('books', [
     'id' => $id
      ]);
 })-> name('books');
 
-
+//Normale route
 Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/user/{name?}', function (?string $name = null) {
-    return $name;
+//Optional parameters
+Route::get('/reviews/{id?}', function (? int $id = null) {
+    return view('reviews', [
+        'id' => $id
+    ]);
 });
+
 
 
 
