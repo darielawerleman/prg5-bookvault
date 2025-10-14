@@ -20,7 +20,15 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/contact', function() {
-    return view('contact');
+    $company = 'BookVault';
+    return view('contact', [
+        'company' => $company
+    ]);
 });
+
+Route::get('books/{name}', function(string $name) {
+    // code
+});
+
 
 
