@@ -18,7 +18,7 @@
 ## 27 October 2025
 
 ### 
-
+- Created cards to display books
 
 ## 29 October 2025
 
