@@ -4,7 +4,7 @@
 
 ### User Stories
 1. Als gebruiker wil ik de status van mijn boek kunnen aanpassen, zodat ik mijn leesvoortgang kan bijhouden.
-2. ls gebruiker wil ik reviews kunnen schrijven, zodat ik mijn mening en ervaring kan delen.
+2. Als gebruiker wil ik reviews kunnen schrijven, zodat ik mijn mening en ervaring kan delen.
 3. Als gebruiker wil ik reviews kunnen filteren op genre, zodat ik reviews vind van boeken die mij interesseren.
 4. Als gebruiker wil ik reviews kunnen opslaan, zodat ik mijn favoriete reviews terug kan vinden.
 5. Als gebruiker wil ik een overzicht van mijn boeken per status, zodat ik mijn collectie kan organiseren.
@@ -15,4 +15,12 @@
 
 ![erd.png](./images/erd.png)
 
+## 27 October 2025
 
+### 
+
+
+## 29 October 2025
+
+### 
+- Added view for profile and login/register

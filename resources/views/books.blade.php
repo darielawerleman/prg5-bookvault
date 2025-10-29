@@ -1,3 +1,11 @@
+@php
+$books = [];
+    @endphp
+
+<x-layout>
+    <h1>Hello from the Books page</h1>
+</x-layout>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +16,29 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Het ID van dit boek is: {{ $id }}</h1>
+<main>
+    <div class="books-library">
+
+
+    </div>
+</main>
 </body>
 </html>
+
+
+
+
+        @foreach($books as $book)
+            <div class="card">
+                <h3>{{ $book->name }}</h3>
+                <p>{{ $book->description }}</p>
+                <a href="{{ route('/books', $book) }}">
+                    Show book
+                </a>
+            </div>
+        @endforeach
+
+
+
+
+

@@ -8,6 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Hier zie je alle producten</h1>
+<nav>
+    <x-nav-link href="/">Home</x-nav-link>
+    <x-nav-link href="/about">About</x-nav-link>
+    <x-nav-link href="/books">Books</x-nav-link>
+
+</nav>
+{{$slot}}
 </body>
 </html>

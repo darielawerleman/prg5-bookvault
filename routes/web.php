@@ -34,8 +34,16 @@ Route::get('books/{id}', function($id) {
      ]);
 })-> name('books');
 
+Route::get('/books', function () {
+    return view('books');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
 //Normale route
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
 
@@ -46,7 +54,23 @@ Route::get('/reviews/{id?}', function (? int $id = null) {
     ]);
 });
 
+Route::get('/profile', function (){
+    return view('profile');
+});
+
 Route::resource('products', ProductController::class);
+
+Route::get('/login', function (){
+    return view('login');
+});
+
+Route::get('/register', function (){
+    return view('register');
+});
+
+
+
+
 
 
 
