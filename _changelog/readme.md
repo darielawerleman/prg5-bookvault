@@ -23,4 +23,4 @@
 ## 29 October 2025
 
 ### 
-- Added view for profile and login/register
+- Added view for profile 
