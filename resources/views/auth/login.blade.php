@@ -45,3 +45,12 @@
         </div>
     </form>
 </x-guest-layout>
+
+{{--@auth--}}
+{{--    //user is authenticated--}}
+{{--    <p>Welkom terug</p>--}}
+{{--@endauth--}}
+
+{{--@guest--}}
+{{--    //user is not authenticated--}}
+{{--@endguest--}}

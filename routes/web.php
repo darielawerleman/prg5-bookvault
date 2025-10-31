@@ -29,13 +29,13 @@ Route::get('/contact', function() {
 
 //Named route
 Route::get('books/{id}', function($id) {
-     return view('books', [
+     return view('books.index', [
     'id' => $id
      ]);
 })-> name('books');
 
-Route::get('/books', function () {
-    return view('books');
+Route::get('/books{name}', function (string $name) {
+    return view('books.index');
 });
 
 Route::get('/about', function () {
@@ -60,13 +60,10 @@ Route::get('/profile', function (){
 
 Route::resource('products', ProductController::class);
 
-Route::get('/login', function (){
-    return view('login');
-});
+Route::resource('books', ProductController::class);
 
-Route::get('/register', function (){
-    return view('register');
-});
+Route::resource('reviews', ProductController::class);
+
 
 
 

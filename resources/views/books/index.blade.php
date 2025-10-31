@@ -1,6 +1,6 @@
 @php
-$books = [];
-    @endphp
+    $books = [];
+@endphp
 
 <x-layout>
     <h1>Hello from the Books page</h1>
@@ -28,17 +28,12 @@ $books = [];
 
 
 
-        @foreach($books as $book)
-            <div class="card">
-                <h3>{{ $book->name }}</h3>
-                <p>{{ $book->description }}</p>
-                <a href="{{ route('/books', $book) }}">
-                    Show book
-                </a>
-            </div>
-        @endforeach
-
-
-
-
-
+@foreach($books as $book)
+    <div class="card">
+        <h3>{{ $book->name }}</h3>
+        <p>{{ $book->description }}</p>
+        <a href="{{ route('/books', $book) }}">
+            Show book
+        </a>
+    </div>
+@endforeach

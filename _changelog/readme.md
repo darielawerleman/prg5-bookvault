@@ -1,5 +1,26 @@
 # Changelog - Praktijkopdracht
 
+
+
+## 29 October 2025
+
+### 
+Made:
+- BookController.php
+- ReviewController.php
+
+## 27 October 2025
+
+### 
+- Created cards to display books
+
+
+## 16 October 2025
+
+###
+- Created ProductController.php
+- Created ProfileController.php
+
 ## 14 October 2025
 
 ### User Stories
@@ -15,12 +36,6 @@
 
 ![erd.png](./images/erd.png)
 
-## 27 October 2025
 
-### 
-- Created cards to display books
 
-## 29 October 2025
 
-### 
-- Added view for profile 
